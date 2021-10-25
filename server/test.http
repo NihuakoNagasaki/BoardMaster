@@ -1,0 +1,41 @@
+GET http://localhost:3000/
+
+###
+
+PATCH  http://localhost:3000/api/taskManager/1
+Content-Type: application/json
+
+{
+    
+    "text": "afa123wd",
+    "check": false
+}
+
+###
+
+GET http://localhost:3000/api/dog/1
+
+###
+
+POST http://localhost:3000/api/taskManager
+Content-Type: application/json
+
+{
+    "text": "123",
+    "check": "false"
+}
+
+###
+
+PATCH http://localhost:3000/api/dog/2
+Content-Type: application/json
+
+{
+    "name": "Jack",
+    "age": 6,
+    "weight": 20
+}
+
+###
+
+DELETE  http://localhost:3000/api/taskManager/0
